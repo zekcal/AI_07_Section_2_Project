@@ -1,4 +1,4 @@
-# AI_07_Section_2_Project
+# Classifying_Music_Genres_By_Mood
 * ipynb 파일의 용량 문제로 인해 파일 내용이 화면에 보이지 않습니다. [이 곳](https://nbviewer.org/github/zekcal/AI_07_Section_2_Project/blob/main/AI_07_%EA%B9%80%EB%B0%B1%EA%B1%B4_Section2.ipynb)을 통해 확인해주시면 감사하겠습니다.
 #### 1. 코드스테이츠 AI/빅 데이터 부트캠프 섹션 2 프로젝트입니다.  
 코드 스테이츠 AI/빅 데이터 부트캠프에서 약 5일간(21.11.08 ~ 22.11.12) 진행한 프로젝트입니다.
