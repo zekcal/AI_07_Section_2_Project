@@ -10,7 +10,7 @@
 - 데이터 확인 및 전처리
   - 파일 확인, 결측치, 문자열을 범주형 데이터로 변경, 너무 높은 상관관계 열 통합 등
 - 다양한 머신 러닝 모델을 활용한 학습
-  - 기준 모델(타겟이 범주형 데이터이기 때문에 최빈값) 설정, Decision Tree, Random Forest, Logistic Regression, XGBoost Classifier, LightGBM을 활용해 f1 스코어를 비교함
+  - 기준 모델(분류 문제이므로 최빈값) 설정 후 Decision Tree, Random Forest, Logistic Regression, XGBoost Classifier, LightGBM을 활용해 f1 스코어를 비교함
   - 높은 점수인 XGBoost Classifier, LightGBM에 대하여 RandomizedSearchCV를 활용한 하이퍼 파라미터 튜닝을 진행
 - 결과 확인
   - 기준 모델의 f1 스코어가 0.0987, 최종 선택된 LightGBM의 하이퍼 파라미터 튜닝된 모델의 f1 스코어가 0.3955로 약 4배 이상 높음을 확인
