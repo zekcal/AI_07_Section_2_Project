@@ -1,11 +1,19 @@
 # Classifying_Music_Genres_By_Mood
+<img src="https://user-images.githubusercontent.com/89769294/176891270-5fa75ed3-6ffb-48ce-8e71-bf1040bf5f9d.png" width="50" height="50">
+
 * ipynb 파일의 용량 문제로 인해 파일 내용이 화면에 보이지 않습니다. [이 곳](https://nbviewer.org/github/zekcal/AI_07_Section_2_Project/blob/main/AI_07_%EA%B9%80%EB%B0%B1%EA%B1%B4_Section2.ipynb)을 통해 확인해주시면 감사하겠습니다.
+
 #### 1. 프로젝트 개요 : 곡의 분위기로 음악 분류하기
-만약 음악을 들을 수 없는 상황에서 곡을 분류해야 하는 상황이 벌어진다고 가정 → 이 문제를 해결할 수 있는 **곡의 분위기를 수치화한 점수를 토대로 곡의 장르를 예측하는 머신 러닝 모델**을 구현하는 프로젝트
-이를 위해 [Kaggle에서 발견한 데이터](https://www.kaggle.com/datasets/saurabhshahane/music-dataset-1950-to-2019)를 활용
-- 데이터는 'artist_name',	'track_name',	'release_date',	'genre',	'lyrics',	'len',	'dating',	'violence',	'world/life, 	...	, 'valence',	'energy',	'topic',	'age'로 구성. 트랙에 대한 정보와, 수치화된 음악의 특징 등이 기록되어 있음
+만약 **음악을 들을 수 없는 상황**이라면,
+  1. 곡의 분위기를 수치화한 기록이 있다면 이를 통해 **장르를 분류해 구분**할 수 있을 것이다.
+  2. 이를 활용해 듣고 싶은 분위기를 지정하면 노래를 추천해주는 서비스를 만들 수 있을 것이다.  
+  
+라는 가설을 세우고 프로젝트를 진행함
+- 데이터는 [Kaggle에서 발견한 데이터](https://www.kaggle.com/datasets/saurabhshahane/music-dataset-1950-to-2019)를 활용함
+- 'artist_name',	'track_name',	'release_date',	'genre',	'lyrics',	'len',	'dating',	'violence',	'world/life, 	...	, 'valence',	'energy',	'topic',	'age'로 구성, 트랙에 대한 정보와, 수치화된 음악의 특징 등이 기록되어 있음
 
 #### 2. 프로젝트 진행 과정
+![image](https://user-images.githubusercontent.com/89769294/176928049-a6c3214d-2fcf-4757-aa50-2d14f527ccbd.png)
 데이터 확인 및 전처리 - 다양한 머신 러닝 모델을 활용한 학습 - 결과 확인
 - **데이터 확인 및 전처리**
   - 파일 확인, 결측치, 문자열을 범주형 데이터로 변경, 너무 높은 상관관계 열 통합 등
@@ -19,8 +27,12 @@
   - 다양한 특징 가운데 'daneability'가 곡 분위기를 확인하는데 가장 큰 영향을 보임을 확인
 
 #### 3. 결론
-음악을 듣지 않고도 곡의 분위기를 통해 음악 장르를 구분할 수 있음
-
+![image](https://user-images.githubusercontent.com/89769294/176928875-7af2abae-2de5-41b9-b1b9-0a6ddac1e7c7.png)
+  1. 곡의 분위기를 수치화한 기록이 있다면 이를 통해 장르를 분류해 구분할 수 있을 것이다.  
+  → **높은 정확도로 가능함**
+  2. 이를 활용해 듣고 싶은 분위기를 지정하면 노래를 추천해주는 서비스를 만들 수 있을 것이다.  
+  → **웹 디자인이 들어간다면 이 모델을 활용해 빠르게 만들 수 있을 것임**
+  
 #### 4. 파일 구성
 **AI_07_김백건_Section2.ipynb** : 프로젝트 진행 내용이 기록된 파일
 
